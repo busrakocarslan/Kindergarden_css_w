@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  /* border: 2px solid red; */
+  width: 90vw;
+  margin: auto;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  margin: 1rem;
+  padding: 1rem;
+  /* background-color: aqua; */
+  /* position: fixed;
+  top: 0; */
+  font-family: "Butterfly Kids", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  border-bottom: 1px solid;
+}
+.left {
+  width: 30vw;
+  height: 20vh;
+  /* border: 2px solid black; */
+  background-image: url(./img/font-2111748_1280.jpg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.middle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Butterfly Kids", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.program select {
+  border: none;
+  font-family: "Butterfly Kids", cursive;
+  font-size: 2rem;
+  -webkit-appearance: none; /* selcteki oku kaldırıyor*/
+  -moz-appearance: none;
+  appearance: none;
+}
+.program select:hover {
+  cursor: pointer;
+}
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  order: -1;
+}
+.buttons button {
+  border: none;
+  background-color: inherit;
+  font-family: "Butterfly Kids", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+}
+.buttons button:hover {
+  cursor: pointer;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+header {
+  background-image: url(./img/45104.png);
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  position: relative;
+}
+.imgleft {
+  position: relative;
+  margin-left: 1rem;
+}
+.train {
+  animation-name: ani2;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+
+@keyframes ani2 {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.sun {
+  position: absolute;
+  left: 35%;
+  top: 35%;
+  /* transform: rotate(-30deg); */
+  animation-name: ani1;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 100;
+  animation-direction: alternate;
+  animation-fill-mode: backwards;
+}
+
+@keyframes ani1 {
+  0% {
+    transform: rotate(-20deg);
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(20deg);
+    transform-origin: top;
+  }
+}
+.yazilar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  transform: translate(200px, 2px);
+}
+.imgright {
+  transform: skew(-15deg);  
+  position: absolute;
+  right: 0px;
+  bottom: -5px;
+  z-index: 2;
+ 
+}
+.bus{
+  
+  animation-name: ani3;
+  animation-duration: 15s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  
+
+}
+
+@keyframes ani3{
+  0%{
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(-280px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+footer {
+  margin-top: 2rem;
+  background-image: linear-gradient(to top, #cfd9df 0%, #5ea8d09a 100%);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+}
+.kids {
+  order: -1;
+  /* transform: skewX(20deg); */
+  transition-duration: 1s;
+  transition-timing-function: linear;
+}
+.kids:hover {
+  transform: translateX(-50px);
+}
+.pag {
+  order: 0;
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleY(1.5);
+}
+.pag img {
+  transition-property: all;
+  transition-duration: 5s;
+  transition-timing-function: ease-out;
+}
+.pag img:hover {
+  transform: translateY(-350px) scaleY(1.5);
+}
+.icons {
+  order: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.icons img {
+  width: 1.2rem;
+}
